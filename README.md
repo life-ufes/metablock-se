@@ -1,6 +1,6 @@
 ## Metablock-SE: PAD-UFES-20 experiments
 
-Minimal guide to preprocess metadata and run k-fold experiments combining images with tabular or sentence-embedded metadata.
+Minimal guide to preprocess metadata and run k-fold experiments combining images with one-hot-encoded or sentence-embedded metadata.
 
 ## Setup
 
