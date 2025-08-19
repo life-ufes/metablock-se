@@ -49,7 +49,7 @@ if __name__=="__main__":
                         "_model_name": model_name,
                         "_sched_patience": 10,
                         "_early_stop": 15,
-                        "_batch_size": 35, #TODO: change to 65
+                        "_batch_size": 65,
                         "_optimizer": optimizer,
                         "_epochs": 100,
                         '_lr_init': 0.0001,
