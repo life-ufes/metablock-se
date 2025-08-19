@@ -8,6 +8,8 @@ Minimal guide to preprocess metadata and run k-fold experiments combining images
 - Install dependencies (PyTorch per your CUDA/CPU setup):
 
 ```bash
+# Initialize the raug submodule
+git submodule update --init
 python -m pip install -r raug/requirements.txt
 python -m pip install sentence-transformers model2vec timm
 # Optional local package (enables `raug.*` imports)
