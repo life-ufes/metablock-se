@@ -10,10 +10,7 @@ Minimal guide to preprocess metadata and run k-fold experiments combining images
 ```bash
 # Initialize the raug submodule
 git submodule update --init
-python -m pip install -r raug/requirements.txt
-python -m pip install sentence-transformers model2vec timm
-# Optional local package (enables `raug.*` imports)
-python -m pip install -e ./raug
+python -m pip install -r requirements.txt
 ```
 
 Update `config.py` paths to match your environment:
@@ -117,7 +114,7 @@ Output: `benchmarks/pad20/results/opt_adam_early_stop_loss/<TIMESTAMP>/agg_metri
 
 ### 3.2 Plot metric vs. missing metadata
 
-This reads `agg_metrics.csv` and produces a figure at repo root.
+This reads `agg_metrics.csv` and produces a figure at repo root. It expects all models and missing levels to be present in the CSV.
 
 ```bash
 python -m utils.plotmissing --timestamp <TIMESTAMP> --metric balanced_accuracy
