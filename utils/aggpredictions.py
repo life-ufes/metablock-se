@@ -20,8 +20,8 @@ comb_paths = [p for p in base_path.iterdir() if p.is_dir()]
 def get_subdirs(path):
     return (p for p in path.iterdir() if p.is_dir())
 
-models = ['mobilenet']#, 'resnet-50', 'caformer_s18', 'efficientnet-b4']
-missing = [0, ]#5, 10, 20, 30, 50, 70]
+models = ['mobilenet', 'resnet-50', 'caformer_s18', 'efficientnet-b4']
+missing = [0, 5, 10, 20, 30, 50, 70]
 
 comb_methods = ['no_metadata', 'metablock', 'metablock-se',]
 metric_names = ['balanced_accuracy', 'auc', 'f1_score']
