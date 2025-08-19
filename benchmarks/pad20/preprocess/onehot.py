@@ -42,6 +42,9 @@ if __name__ == '__main__':
     print("- Converting the labels to numbers")
     df = label_categorical_to_number (df, PAD20.TARGET_COLUMN, col_target_number=PAD20.TARGET_NUMBER_COLUMN)
 
+    config.DATA_PATH.parent.mkdir(exist_ok=True)
+    config.DATA_PATH.mkdir(exist_ok=True)
+
     simulate_missing_data(df, save_folder=config.DATA_PATH,
                             encoder_function=one_hot_encode,
                             encoder_name= f'one-hot',
