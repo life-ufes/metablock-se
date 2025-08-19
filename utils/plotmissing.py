@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from scipy import stats
 
 parser = argparse.ArgumentParser(description='Aggregate metrics from a kfold validation experiment')
-parser.add_argument('--timestamp', type=str, )
+parser.add_argument('--timestamp', type=str, required=True)
 parser.add_argument('--metric', type=str, default='balanced_accuracy', help='[balanced_accuracy, auc, f1_score]')
 args = parser.parse_args()
 
