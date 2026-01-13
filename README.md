@@ -1,5 +1,8 @@
-## Metablock-SE: PAD-UFES-20 experiments
+[MetaBlock-SE: A Method to Deal With Missing Metadata in Multimodal Skin Cancer Classification](https://ieeexplore.ieee.org/document/11284542)
 
+DOI: 10.1109/JBHI.2025.3612837
+
+## Metablock-SE: PAD-UFES-20 experiments
 Minimal guide to preprocess metadata and run k-fold experiments combining images with one-hot-encoded or sentence-embedded metadata.
 
 ## Setup
@@ -123,4 +126,3 @@ python -m utils.plotmissing --timestamp <TIMESTAMP> --metric balanced_accuracy
 Where `--metric` is one of: `balanced_accuracy`, `auc`, `f1_score`.
 
 Output: `./<metric>_vs_missing_data.png` (e.g., `balanced_accuracy_vs_missing_data.png`).
-
